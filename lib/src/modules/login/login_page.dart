@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
             break;
           case LoginStateStatus.success:
             hideLoader();
-            Modular.to.navigate('/home'); //TODO voltar para '/'
+            Modular.to.navigate('/');
             break;
           case LoginStateStatus.error:
             hideLoader();
