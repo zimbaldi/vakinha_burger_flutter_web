@@ -74,7 +74,7 @@ class ProductRepositoryImpl extends ProductRepository {
       }
     } on DioException catch (e, s) {
       log('Erro ao salvar produto', error: e, stackTrace: s);
-      throw RepositoryException(message: 'Erro ao buscar salvar');
+      throw RepositoryException(message: 'Erro ao salvar produto');
     }
   }
 
